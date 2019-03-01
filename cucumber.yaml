@@ -1,0 +1,10 @@
+---
+default: --format progress -p html -p chrome_headless
+html: --format html --out=log/report.html
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+chrome_headless: BROWSER=chrome_headless
+
+
+#Cucumber te permite armazenar opções de linha de comando em um arquivo .yaml
+#Esse arquivo deve ser colocado em um diretorio raiz chamado config
