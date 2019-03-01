@@ -10,6 +10,7 @@ pipeline {
         }
         stage("Run Tests") {
             sh "bundle exec cucumber -t @smoke"
-        }
-    }
+         }
+     }
+ }
 }
