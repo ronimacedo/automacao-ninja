@@ -6,11 +6,17 @@ pipeline {
     }
     stages {
         stage("Build") {
-            sh "bundle install"
+            steps {
+              sh "bundle install"
+            }
+       
         }
         stage("Run Tests") {
-            sh "bundle exec cucumber -t @smoke"
+            steps {
+        sh "bundle exec cucumber -t @smoke"
+            }
+            
          }
      }
  }
-}
+
